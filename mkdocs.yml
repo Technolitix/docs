@@ -1,6 +1,11 @@
-site_name: My Docs
+site_name: Technolitrix
 theme:
   name: material
+  #custom_dir: overrides
+  favicon: images/favicon.png
+  language: en
+  icon:
+    logo:  material/integrated-circuit-chip
   features:
     - content.code.annotate
     - content.code.copy
@@ -16,6 +21,10 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+
+  plugins:
+    - typeset
+    - search
 
   palette:
 
@@ -38,3 +47,35 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - toc:
+        permalink: true
+
+copyright: Copyright &copy; 2024 Jakob Seitz
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@jcs-fpv
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/technolitrix
+
+nav:
+  - Home: https://technolitrix.de
+  - Knoledge Base:
+      - 'Start Here':
+        - 'Start Here': index.md
+      - 'Soldering':
+        - 'Microsoldering': sauna_controller.md
+      - 'Hardware & Software':
+        - 'Start Here': index.md
