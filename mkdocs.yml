@@ -1,7 +1,7 @@
 site_name: Technolitrix
 theme:
   name: material
-  #custom_dir: overrides
+  custom_dir: overrides
   favicon: images/favicon.png
   language: en
   icon:

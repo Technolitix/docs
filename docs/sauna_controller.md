@@ -1,6 +1,6 @@
 # Sauna Controller
 
-![Sauna Controller](pictures/controller_image.PNG)
+![Sauna Controller](images/controller_image.png)
 
 A project for controlling a sauna using sensors and actuators. This application allows precise management of temperature, humidity, and other parameters to ensure an optimal sauna experience.
 
@@ -64,14 +64,14 @@ The `secrets.yaml` file is not included in this repository. It should contain se
 4. **Deploy and start**:
    Upload the configuration to your device and start the controller.
 
----
 
-## Security
 
-- The `secrets.yaml` file should never be included in the repository.
-- Always ensure sensitive data is stored externally and securely.
+!!! warning "Security"
 
----
+    - The `secrets.yaml` file should never be included in the repository.
+    - Always ensure sensitive data is stored externally and securely.
+
+
 
 ## Contact
 
@@ -79,6 +79,3 @@ If you have any questions or issues, feel free to open an [Issue](https://github
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
