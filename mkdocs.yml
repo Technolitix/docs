@@ -71,14 +71,14 @@ extra:
       link: https://www.instagram.com/technolitrix
 
 nav:
-  - Home: https://technolitrix.de
+  - Home: https://docs.technolitrix.org
   - Opulo:
       - 'Feeder':
-        - 'Drive Wheel Clue Jig': drive-wheel-clue-jig.md
-  - Knoledge Base:
-      - 'Start Here':
-        - 'Start Here': index.md
-      - 'Soldering':
-        - 'Microsoldering': sauna_controller.md
-      - 'Hardware & Software':
-        - 'Start Here': index.md
+        - 'Drive Wheel Glue Jig': drive-wheel-clue-jig.md
+#  - Knoledge Base:
+#      - 'Start Here':
+#        - 'Start Here': index.md
+#      - 'Soldering':
+#        - 'Microsoldering': sauna_controller.md
+#      - 'Hardware & Software':
+#        - 'Start Here': index.md
