@@ -78,4 +78,4 @@ Now you can push the motor into its place.
 - **Print Time**: Approximately 27 minutes  
 - **Infill**: 20%  
 - **Supports**: Enabled  
-- **Orientation**: Place the smaller circular side flat on the build plate
+- **Orientation**: Place the smaller circular side flat on the build plate.
