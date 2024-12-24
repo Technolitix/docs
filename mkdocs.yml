@@ -76,9 +76,9 @@ nav:
       - 'Feeder':
         - 'Drive Wheel Glue Jig': drive-wheel-clue-jig.md
   - Knoledge Base:
-#      - 'Start Here':
-#        - 'Start Here': index.md
+      - 'Start Here':
+        - 'Start Here': index.md
       - 'Soldering':
         - 'Microsoldering': sauna_controller.md
-#      - 'Hardware & Software':
-#        - 'Start Here': index.md
+      - 'Hardware & Software':
+        - 'Start Here': index.md
