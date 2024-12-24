@@ -41,4 +41,7 @@ The standard jigs for assembling Opulo's drive wheel are often insufficient for 
 - **Print Time**: Approximately 27 minutes  
 - **Infill**: 20%  
 - **Supports**: Enabled  
-- **Orientation**: Place the large circular side flat on the build plate
+- **Orientation**: Place the smaller circular side flat on the build plate
+
+!!! warning "N20 Shaft"
+    Be carefull with putting the N20 motor shaft into the 3D print, it is designed to be very tight, had to use some pressure and a bit of wiggeling to get it in the hole. If you have trubble getting it in, use a heatgun or lighter to heat the shaft and push it in, not to hot, else you deform the shape and therfor the alignment of the collar.
