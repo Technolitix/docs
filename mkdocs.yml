@@ -74,7 +74,7 @@ nav:
   - Home: https://docs.technolitrix.org
   - Opulo:
       - 'Feeder':
-        - 'Drive Wheel Glue Jig': drive-wheel-clue-jig.md
+        - 'Drive Wheel Glue Jig': drive-wheel-glue-jig.md
   - Knoledge Base:
       - 'Start Here':
         - 'Start Here': index.md
