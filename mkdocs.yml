@@ -72,6 +72,9 @@ extra:
 
 nav:
   - Home: https://technolitrix.de
+  - Opulo:
+      - 'Feeder':
+        - 'Drive Wheel Clue Jig': drive-wheel-clue-jig.md
   - Knoledge Base:
       - 'Start Here':
         - 'Start Here': index.md
