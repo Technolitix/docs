@@ -1,9 +1,18 @@
 !!! info "Refer to OHAI-Opulo Instructions"
     Always refer to the OHAI-Opulo instructions: [https://ohai.opulo.io/feeder8/indexing-wheel/#glue-shaft-collar-asm-and-drive-wheel-together](https://ohai.opulo.io/feeder8/indexing-wheel/#glue-shaft-collar-asm-and-drive-wheel-together)
 
+
 # Why This Tool?
 
 The standard jigs for assembling Opulo's drive wheel are often insufficient for precise alignment during the gluing process. That’s why I designed this easy-to-print jig to simplify the task for everyone.
+
+
+## Additional Information
+
+!!! info "Files"
+    - You can find both the STL and STEP files on my [GitHub](https://github.com/Technolitix/shaft-aligment-jig.git) for downloading or customizing.  
+    - When gluing multiple drive wheels at once (e.g., 30 units), print as many jigs as needed to speed up the process.
+
 
 ## Features and Benefits
 
@@ -33,9 +42,3 @@ The standard jigs for assembling Opulo's drive wheel are often insufficient for 
 - **Infill**: 20%  
 - **Supports**: Enabled  
 - **Orientation**: Place the large circular side flat on the build plate
-
-## Additional Information
-
-!!! info "Files"
-    - You can find both the STL and STEP files on my [GitHub](#) for downloading or customizing.  
-    - When gluing multiple drive wheels at once (e.g., 30 units), print as many jigs as needed to speed up the process.
