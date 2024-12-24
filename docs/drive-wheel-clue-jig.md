@@ -9,7 +9,7 @@
 
 The standard jigs for assembling Opulo's drive wheel are often insufficient for precise alignment during the gluing process. That’s why I designed this easy-to-print jig to simplify the task for everyone.
 
-![jig-done-front](docs\images\shaft-aligment-jig\jig-done-front.jpeg)
+![jig-done-front](\images\shaft-aligment-jig\jig-done-front.jpeg)
 ![jig-done-back](images\shaft-aligment-jig\jig-done-back.jpeg)
 
 ## Features and Benefits
