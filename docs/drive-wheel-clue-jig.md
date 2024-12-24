@@ -38,4 +38,4 @@ The standard jigs for assembling Opulo's drive wheel are often insufficient for 
 
 !!! info "Files"
     - You can find both the STL and STEP files on my [GitHub](#) for downloading or customizing.  
-    - When gluing multiple drive wheels at once (e.g., 30 units), print as many jigs as needed to speed up the process.
+    - When gluing multiple drive wheels at once (e.g., 30 units), print as many jigs as needed to speed up the processs
