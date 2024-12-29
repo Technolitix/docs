@@ -80,3 +80,7 @@ nav:
   - Opulo:
       - 'Feeder':
         - 'Drive Wheel Glue Jig': drive-wheel-glue-jig.md
+  
+  - Part-DB:
+      - 'Spotlight Storage':
+        - 'Trix Spotlight Storage': trix-spotlight-storage.md
