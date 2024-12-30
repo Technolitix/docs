@@ -8,7 +8,7 @@ I use this [plugin](https://violentmonkey.github.io/) for google chrome. This us
 
 ### MariaDB
 Here I have one table per storage location that shows where a part is located with ws2812 led's.
-It contains:
+It contains: 
 
 | Variables     |  e.g. | Description                             |
 | :-----------: |  :--- | :-------------------------------------- |
