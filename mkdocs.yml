@@ -1,8 +1,12 @@
 site_name: Technolitrix
+repo_url: https://github.com/Technolitix
+
+
+
 theme:
   name: material
   custom_dir: overrides
-  favicon: images/favicon.png
+  favicon: images/favicon.ico
   language: en
   icon:
     logo:  material/integrated-circuit-chip
