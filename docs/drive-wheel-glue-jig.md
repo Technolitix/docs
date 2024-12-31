@@ -4,7 +4,7 @@
 !!! info "Files"
     - You can find both the STL and STEP files on my [GitHub](https://github.com/Technolitix/shaft-aligment-jig.git) for downloading or customizing.  
     - When gluing multiple drive wheels at once (e.g., 30 units), print as many jigs as needed to speed up the process.
-    - Opulo uses some kin od shims to get clearence between indexin wheel and feeder body. I used 5 Post-It's and cut an slot in it, to go around the motor shaft. This slefmade shim should then fit in the lagest opening where you see the index wheel. 
+    - Opulo uses some kind of shims to get clearence between indexing-wheel and feeder body. I used 5 Post-It's and cut a slot in it, to go around the motor shaft. This slefmade shim should then fit in the lagest opening where you see the index wheel. Then lay the indexing-wheel on it, press it down and thigthen the set-screw, after this, just pull the shim out.
 
 # Why This Tool?
 
