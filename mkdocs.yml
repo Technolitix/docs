@@ -86,7 +86,7 @@ extra_css:
   - stylesheets/extra.css
 extra:
   generator: false
-  social:
+ # social:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@jcs-fpv
     - icon: fontawesome/brands/instagram
