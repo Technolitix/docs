@@ -81,16 +81,14 @@ markdown_extensions:
             format: !!python/name:pymdownx.superfences.fence_code_format
 
 
-copyright: Copyright &copy; 2024 Jakob Seitz
+copyright: Copyright &copy; 2026 Jakob Seitz
 extra_css:
   - stylesheets/extra.css
-#extra:
-#  generator: false
-#  social:
-#    - icon: fontawesome/brands/youtube
-#      link: https://www.youtube.com/@jcs-fpv
-#    - icon: fontawesome/brands/instagram
-#      link: https://www.instagram.com/official_technolitrix
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@jcs-fpv
 
 nav:
   - Home: https://docs.technolitrix.org
