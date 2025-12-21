@@ -84,11 +84,6 @@ markdown_extensions:
 copyright: Copyright &copy; 2026 Jakob Seitz
 extra_css:
   - stylesheets/extra.css
-extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@jcs-fpv
 
 nav:
   - Home: https://docs.technolitrix.org
