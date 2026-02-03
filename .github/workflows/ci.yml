@@ -1,54 +1,44 @@
-name: ci
+name: pages
 
 on:
   push:
-    branches: [master, main]
+    branches: [main, master]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: pages-deploy
+  group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Cache MkDocs Material
-        uses: actions/cache@v4
-        with:
-          path: .cache
-          key: mkdocs-material-${{ runner.os }}-${{ hashFiles('**/mkdocs.yml') }}
-          restore-keys: |
-            mkdocs-material-${{ runner.os }}-
-
-      - name: Install deps
-        run: |
+      - run: |
           python -m pip install --upgrade pip
-          python -m pip install mkdocs==1.6.0 mkdocs-material
-          mkdocs --version
+          python -m pip install mkdocs mkdocs-material
 
-      - name: Build site
-        run: mkdocs build
+      - run: mkdocs build
 
-      - name: Add CNAME
-        run: echo "docs.technolirix.de" > site/CNAME
-      - name: Verify CNAME in build output
-        run: |
-          ls -la site
-          echo "---- CNAME ----"
-          cat site/CNAME
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
 
-
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
