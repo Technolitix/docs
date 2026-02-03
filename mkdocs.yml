@@ -92,7 +92,7 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/official_technolitrix
 nav:
-  - Home: https://docs.technolitrix.org
+  - Home: https://docs.technolitrix.de
   - Knoledge Base:
       - 'Start Here':
         - 'Start Here': index.md
