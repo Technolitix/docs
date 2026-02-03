@@ -25,5 +25,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install --upgrade mkdocs mkdocs-material
-      - run: mkdocs gh-deploy --force --cname docs.technolitrix.de
+      - run: pip install mkdocs==1.6.0 mkdocs-material
+      - run: mkdocs gh-deploy --force --cname docs.technolirix.de
