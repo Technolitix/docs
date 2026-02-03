@@ -43,6 +43,12 @@ jobs:
 
       - name: Add CNAME
         run: echo "docs.technolirix.de" > site/CNAME
+      - name: Verify CNAME in build output
+        run: |
+          ls -la site
+          echo "---- CNAME ----"
+          cat site/CNAME
+
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
