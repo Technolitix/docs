@@ -1,29 +1,43 @@
 name: ci
+
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [master, main]
+
 permissions:
   contents: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+          python-version: "3.x"
+          cache: "pip"
+
+      - name: Cache MkDocs Material
+        uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
           path: .cache
+          key: mkdocs-material-${{ runner.os }}-${{ hashFiles('**/mkdocs.yml') }}
           restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs==1.6.0 mkdocs-material
-      - run: mkdocs gh-deploy --force --cname docs.technolirix.de
+            mkdocs-material-${{ runner.os }}-
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "mkdocs==1.6.0" "mkdocs-material"
+          mkdocs --version
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --cname docs.technolirix.de
